@@ -1,0 +1,35 @@
+#wrap { }
+#wrap:after { content:''; display:block; clear:both; visibility:visible; }
+
+#container { padding:145px 40px 0 280px; }
+
+.titleArea { margin-bottom:25px; padding-bottom:15px; border-bottom:1px solid rgba(163,163,163,.3); }
+.titleArea h5 { font-size:23px; color:#021343; font-weight:700; }
+
+.boxSearch { padding:10px 30px; background:#fff; }
+.boxSearch:after { content:''; display:block; clear:both; visibility:visible; }
+.boxSearch>div { float:left; }
+.boxSearch>div.btn { float:right; }
+.boxSearch>div+div { margin-left:5px; }
+
+.boxSearch .inputAll input[type="radio"]+label { width:64px; height:40px; margin-right:0; padding-left:0; border-radius:2px; border:1px solid #c0c9d4; line-height:38px; font-size:13px; color:#000; text-align:center; }
+.boxSearch .inputAll input[type="radio"]:checked+label { border-color:#3127ff; }
+.boxSearch .inputAll input[type="radio"]+label:before,
+.boxSearch .inputAll input[type="radio"]+label:after { display:none; }
+
+.boxSearch .inputDate { position:relative; margin-right:56px; }
+.boxSearch .inputDate input[type="text"] { width:140px; float:left; border:1px solid #c0c9d4; border-radius:2px; background:url('../images/iconCalendar.png') 112px center no-repeat; }
+
+.boxSearch .inputDate input[type="radio"]+label { position:absolute; left:-99999px; top:0; font-size:0; text-indent:-99999px; }
+.boxSearch .inputDate input[type="radio"]+label:before,
+.boxSearch .inputDate input[type="radio"]+label:after { display:none; }
+.boxSearch .inputDate span { float:left; margin:0 5px; line-height:40px; }
+
+.boxSearch .inputDate.active input[type="text"] { border-color:#3127ff; }
+
+.boxSearch .inputType .boxSelect { float:left; }
+.boxSearch .inputType input[type="text"] { width:280px; float:left; margin-left:5px; }
+
+.boxSearch .btn a { float:left; }
+.boxSearch .btn a+a { margin-left:5px; }
+

@@ -1,0 +1,59 @@
+/* Color */
+span.c_red { color:#ff0000; }
+span.c_blue { color:#3127ff; }
+
+
+/* Margin */
+.mt20 { margin-top:20px !important; }
+
+
+/* Divine */
+.clear:after { content:''; display:block; clear:both; visibility:visible; }
+.clear>.left { float:left; }
+.clear>.right { float:right; }
+
+
+/* Button */
+.btnBasic { height:40px; display:inline-block; padding:0 28px; background:#3127ff; font-size:15px; color:#fff; line-height:40px; vertical-align:middle; }
+.btnBasic.bgBlack { background:#3a414a; }
+.btnBasic.tpExcel { width:140px; padding:0; background:#009b72; text-align:center; }
+.btnBasic.tpExcel:after { content:''; width:9px; height:11px; display:inline-block; margin-top:-4px; margin-left:5px; background:url('../images/iconExcel.png') center center no-repeat; vertical-align:middle; }
+
+
+/* Select */
+.boxSelect { min-width:130px; height:40px; position:relative; border:1px solid #c0c9d4; border-radius:2px; line-height:38px; font-size:13px; color:#000; cursor:pointer; }
+.boxSelect .selected { position:relative; padding:0 14px; z-index:1; }
+.boxSelect .selected:after { content:''; width:12px; height:7px; position:absolute; right:15px; top:50%; margin-top:-4px; background:url('../images/iconSelect.png') center center no-repeat; transition:all .3s; }
+.boxSelect .selected.on:after { transform:rotate(180deg); }
+.boxSelect ul { position:absolute; left:-1px; right:-1px; top:38px; background:#fff; border:1px solid #c0c9d4; border-top:0; border-bottom-left-radius:2px; border-bottom-right-radius:2px; overflow:hidden; z-index:2; }
+.boxSelect ul li { padding:0 14px; }
+
+
+/* Tab */
+.boxTab:after { content:''; display:block; clear:both; visibility:visible; }
+.boxTab a.tab { height:46px; float:left; padding:0 35px; border-bottom:1px solid #f4f6f9; color:#6f7680; font-size:15px; line-height:45px; }
+.boxTab a.tab.active { border-color:#3127ff; color:#3127ff; }
+
+.tabArea { padding-top:25px; display:none; }
+.tabArea.active { display:block; }
+
+
+/* Table */
+.boxTable { margin-top:20px; }
+.boxTable .tableTop { padding:10px 30px; background:#fff; font-size:13px; color:#000; font-weight:700; line-height:40px; }
+.boxTable .tableTop .info { float:left; }
+.boxTable table { width:100%; }
+.boxTable table thead th { height:50px; padding:0 10px; background:#eaeef2; font-weight:700; color:#3a414a; font-size:13px; }
+.boxTable table tbody td { height:45px; padding:0 10px; background:#fff; font-size:13px; color:#000; text-align:center; }
+
+
+/* Paging */
+.boxPaging { margin-top:75px; text-align:center; }
+.boxPaging .inBox { display:inline-block; vertical-align:middle; }
+.boxPaging .inBox>a { width:35px; height:35px; float:left; background-color:#fff; background-repeat:no-repeat; background-position:center center; font-size:0; text-indent:-99999px; }
+.boxPaging .inBox>a+a { margin-left:2px; }
+.boxPaging .inBox>a.first { background-image:url('../images/iconFirst.png'); }
+.boxPaging .inBox>a.prev { background-image:url('../images/iconPrev.png'); }
+.boxPaging .inBox>a.next { background-image:url('../images/iconNext.png'); }
+.boxPaging .inBox>a.last { background-image:url('../images/iconLast.png'); }
+.boxPaging .inBox .num { min-width:82px; height:35px; padding:0 20px; float:left; margin:0 2px; background:#fff; text-align:center; line-height:35px; }
