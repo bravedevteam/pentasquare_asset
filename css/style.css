@@ -9,7 +9,7 @@
 .boxSearch { padding:10px 30px; background:#fff; }
 .boxSearch:after { content:''; display:block; clear:both; visibility:visible; }
 .boxSearch>div { float:left; }
-.boxSearch>div.btn { float:right; }
+.boxSearch>div.btn { margin-top:0; float:right; }
 .boxSearch>div+div { margin-left:5px; }
 
 .boxSearch .inputAll input[type="radio"]+label { width:64px; height:40px; margin-right:0; padding-left:0; border-radius:2px; border:1px solid #c0c9d4; line-height:38px; font-size:13px; color:#000; text-align:center; }

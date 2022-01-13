@@ -72,5 +72,6 @@ input[type="checkbox"],
 input[type="radio"] { position:absolute; left:-999999px; top:0; opacity:0; }
 input[type="radio"]+label { height:20px; position:relative; padding-left:28px; display:inline-block; margin-right:65px; cursor:pointer; line-height:20px; vertical-align:middle; }
 input[type="radio"]+label:before { content:''; width:20px; height:20px; position:absolute; left:0; top:50%; border-radius:50%; border:1px solid #e3e3e3; transform:translateY(-50%); box-sizing:border-box; }
+input[type="radio"]:checked+label:before { border-color:#3127ff; }
 input[type="radio"]+label:after { content:''; width:12px; height:12px; position:absolute; left:4px; top:50%; border-radius:50%; background:#d1d1d1; transform:translateY(-50%); }
-input[type="radio"]:checked+label:after { background:#021343; }
+input[type="radio"]:checked+label:after { background:#3127ff; }

@@ -1,3 +1,9 @@
+/* Text Align */
+.tl { text-align:left !important; }
+.tc { text-align:center !important; }
+.tr { text-align:right !important; }
+
+
 /* Color */
 span.c_red { color:#ff0000; }
 span.c_blue { color:#3127ff; }
@@ -14,14 +20,22 @@ span.c_blue { color:#3127ff; }
 
 
 /* Button */
+.btn { margin-top:55px; position:relative; }
+.btn.left { text-align:left; }
+.btn.center { text-align:center; }
+.btn.right { text-align:right; }
+.btn.lg .btnBasic { height:46px; line-height:44px; }
+.btn .opt { position:absolute; right:20px; top:0; }
+
 .btnBasic { height:40px; display:inline-block; padding:0 28px; background:#3127ff; font-size:15px; color:#fff; line-height:40px; vertical-align:middle; }
 .btnBasic.bgBlack { background:#3a414a; }
+.btnBasic.bgWhite { background:#fff; border:1px solid #3127ff; color:#3127ff; }
 .btnBasic.tpExcel { width:140px; padding:0; background:#009b72; text-align:center; }
 .btnBasic.tpExcel:after { content:''; width:9px; height:11px; display:inline-block; margin-top:-4px; margin-left:5px; background:url('../images/iconExcel.png') center center no-repeat; vertical-align:middle; }
 
 
 /* Select */
-.boxSelect { min-width:130px; height:40px; position:relative; border:1px solid #c0c9d4; border-radius:2px; line-height:38px; font-size:13px; color:#000; cursor:pointer; }
+.boxSelect { min-width:130px; height:40px; display:inline-block; position:relative; border:1px solid #c0c9d4; border-radius:2px; line-height:38px; font-size:13px; color:#000; cursor:pointer; }
 .boxSelect .selected { position:relative; padding:0 14px; z-index:1; }
 .boxSelect .selected:after { content:''; width:12px; height:7px; position:absolute; right:15px; top:50%; margin-top:-4px; background:url('../images/iconSelect.png') center center no-repeat; transition:all .3s; }
 .boxSelect .selected.on:after { transform:rotate(180deg); }
@@ -43,8 +57,14 @@ span.c_blue { color:#3127ff; }
 .boxTable .tableTop { padding:10px 30px; background:#fff; font-size:13px; color:#000; font-weight:700; line-height:40px; }
 .boxTable .tableTop .info { float:left; }
 .boxTable table { width:100%; }
-.boxTable table thead th { height:50px; padding:0 10px; background:#eaeef2; font-weight:700; color:#3a414a; font-size:13px; }
-.boxTable table tbody td { height:45px; padding:0 10px; background:#fff; font-size:13px; color:#000; text-align:center; }
+.boxTable table th { height:50px; padding:0 20px; background:#eaeef2; font-weight:700; color:#3a414a; font-size:13px; }
+.boxTable table td { height:45px; padding:0 20px; background:#fff; font-size:13px; color:#000; text-align:center; }
+
+.boxTable.is--vertical {  }
+.boxTable.is--vertical table th { border-top:1px solid #f4f6f9; background:#c0c9d4; text-align:left; }
+.boxTable.is--vertical table td { border-top:1px solid #f4f6f9; text-align:left; }
+.boxTable.is--vertical table tr:first-of-type th,
+.boxTable.is--vertical table tr:first-of-type td { border-top:0; }
 
 
 /* Paging */

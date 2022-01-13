@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=no" />
+	<title>PENTASQUARE</title>
+	<link rel="stylesheet" href="css/common.css" />
+	<link rel="stylesheet" href="css/jquery-ui.css" />
+	<link rel="stylesheet" href="css/style.css" />
+	<script src="js/jquery-3.5.1.min.js"></script>
+	<script src="js/jquery-ui.js"></script>
+	<script src="js/common.js"></script>
+</head>
+
+<body>
+	<header id="header">
+		<h1>PENTASQUARE</h1>
+		<div class="topMenu">
+			<div class="user">
+				<div class="thumb"><img src="./images/iconThumb.png" alt="" /></div>
+				<div class="name">홍길동</div>
+			</div>
+			<div class="company">회사명</div>
+			<a href="#" class="btnLogout">Log out</a>
+		</div>
+	</header>
+	<section id="wrap">
+		<aside id="aside">
+			<div class="topArea">
+				<h2>Asset Studio<br /><span>for Business</span></h2>
+				<a href="#" class="btnCreatNFT">+ 새로운 NFT 생성하기</a>
+			</div>
+			<div id="lnb">
+				<div class="row">
+					<div class="title">보안 및 관리</div>
+					<ul>
+						<li class="active"><a href="#">운영자 관리</a></li>
+						<li><a href="#">IP 설정</a></li>
+						<li><a href="#">지갑현황</a></li>
+						<li><a href="#">로그내역</a></li>
+					</ul>
+				</div>
+				<div class="row">
+					<div class="title">자산관리</div>
+					<ul>
+						<li><a href="#">대시보드</a></li>
+						<li><a href="#">자산 현황</a></li>
+						<li><a href="#">자산 전송 현황</a></li>
+					</ul>
+				</div>
+			</div>
+			<div class="side_bottom">
+				<a href="#" class="btnDemo">Demo Version 1.0</a>
+				<div class="social">
+					<a href="#" class="sns_insta">instagram</a>
+					<a href="#" class="sns_channel">channel</a>
+					<a href="#" class="sns_polymath">polymath</a>
+				</div>
+				<div class="copyright">
+					<h3>PENTASQUARE</h3>
+					<p>Pentasquare Inc.<br />All Rights Reserved.</p>
+				</div>
+			</div>
+		</aside>
+		<article id="container">
+			<div class="titleArea">
+				<h5>운영자 상세 정보</h5>
+			</div>
+			<div class="contArea">
+        <div class="boxTable is--vertical">
+          <table>
+            <colgroup>
+              <col width="140" />
+              <col width="320" />
+              <col width="140" />
+              <col width="320" />
+            </colgroup>
+            <tr>
+              <th>이메일</th>
+              <td>kmn@naver.com</td>
+              <th>등록일시</th>
+              <td>2021.12.25 오후 13:15</td>
+            </tr>
+            <tr>
+              <th>이름</th>
+              <td>이매진</td>
+              <th>연락처</th>
+              <td>010-1234-5678</td>
+            </tr>
+            <tr>
+              <th>보유권한 설정</th>
+              <td>
+                <div class="boxSelect">
+                  <div class="selected">조회권한</div>
+                  <ul class="list">
+                    <li>조회권한</li>
+                    <li>부관리자</li>
+                    <li>운영자</li>
+                  </ul>
+                </div>
+              </td>
+              <th>승인여부 설정</th>
+              <td>
+                <input type="radio" id="chk_confirm1" name="chk_confirm" checked />
+                <label for="chk_confirm1">승인대기</label>
+                <input type="radio" id="chk_confirm2" name="chk_confirm" />
+                <label for="chk_confirm2">승인</label>
+              </td>
+            </tr>
+            <tr>
+              <th>비밀번호</th>
+              <td><input type="password" value="123456767" /></td>
+              <th>비밀번호 확인</th>
+              <td><input type="password" value="123456767" /></td>
+            </tr>
+          </table>
+          <div class="btn center lg">
+            <a href="#" class="btnBasic bgBlack">취소</a>
+            <a href="#" class="btnBasic">저장</a>
+            <div class="opt">
+              <a href="#" class="btnBasic bgWhite">삭제</a>
+            </div>
+          </div>
+        </div>
+			</div>
+		</article>
+	</section>
+</body>
+</html>
